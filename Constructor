@@ -1,0 +1,32 @@
+class Private{
+    private Private(){
+        System.out.println("hello");
+    }
+    
+}
+class Parameterise{
+    String x,y;
+    Parameterise(String a , String b){
+        x=a;
+        y=b;
+    }
+    void show(){
+        System.out.println(x+" "+y);
+    }
+}
+class Default{
+    String x,y;
+    void disp(){
+        System.out.println(x+" "+y);
+    }
+}
+class A{
+    public static void main(String args[]){
+        Private p = new Private();
+        Parameterise b =new Parameterise("hello","world");
+        Default d = new Default();
+        d.disp();
+        b.show();
+
+    }
+}
